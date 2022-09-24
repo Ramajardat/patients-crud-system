@@ -24,9 +24,10 @@ if (isset($_POST['update_patient'])) {
 
     $name = mysqli_real_escape_string($con, $_POST['name']);
     $age = mysqli_real_escape_string($con, $_POST['age']);
-    $address = mysqli_real_escape_string($con, $_POST['Address']);
+    $address = mysqli_real_escape_string($con, $_POST['address']);
 
-    $query = "UPDATE patients SET name='$name', age='$age', address='$Adderss' WHERE id='$patient_id' ";
+
+    $query = "UPDATE patients SET name='$name', age='$age', address='$address' WHERE id='$patient_id' ";
     $query_run = mysqli_query($con, $query);
 
     if ($query_run) {
@@ -46,7 +47,7 @@ if (isset($_POST['save_patient'])) {
     $age = mysqli_real_escape_string($con, $_POST['age']);
     $address = mysqli_real_escape_string($con, $_POST['address']);
 
-    $query = "INSERT INTO patients (name,age,Address) VALUES ('$name','$age','$address')";
+    $query = "INSERT INTO patients (name,age,address) VALUES ('$name','$age','$address')";
 
     $query_run = mysqli_query($con, $query);
     if ($query_run) {

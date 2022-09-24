@@ -60,7 +60,7 @@ require 'dbcon.php';
                                 <div class="mb-3">
                                     <label>Patient Address</label>
                                     <p class="form-control">
-                                        <?= $patient['Address']; ?>
+                                        <?= $patient['address']; ?>
                                     </p>
                                 </div>
 

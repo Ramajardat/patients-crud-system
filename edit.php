@@ -57,7 +57,7 @@ require 'dbcon.php';
                                     </div>
                                     <div class="mb-3">
                                         <label>Patient Address</label>
-                                        <input type="text" name="address" value="<?= $patient['Address']; ?>" class="form-control">
+                                        <input type="text" name="address" value="<?= $patient['address']; ?>" class="form-control">
                                     </div>
 
                                     <div class="mb-3">
